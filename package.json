@@ -1,0 +1,29 @@
+{
+  "name": "js-battleship",
+  "version": "1.0.0",
+  "description": "An implementation of the classic game Battleship using vanilla Javascript and the HTML5 Canvas.",
+  "main": "Player.js",
+  "scripts": {
+    "start": "watchify battleship.js -t babelify --outfile battleship.dist.js",
+    "test": "mocha --compilers js:babel-core/register --recursive ./player"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/TNikolai/js-battleship/issues"
+  },
+  "homepage": "https://gitlab.com/TNikolai/js-battleship#README",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "watchify": "^3.9.0",
+    "mocha": "~2.5.3",
+    "chai": "~3.5.0"
+  }
+}
